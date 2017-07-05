@@ -1,0 +1,173 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+  margin-right: 400px;
+  z-index: 0;
+  width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#floating-panel {
+ text-align: right;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  float: right;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+
+#floating-panel-bottom {
+ text-align: right;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  float: right;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  height: 100%;
+  width: 99%;
+
+}
+
+#right-panel select, #right-panel input {
+  font-size: 15px;
+  height: 100%;
+  width: 99%;
+}
+
+#right-panel select {
+  width: 99%;
+  height: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+   width: 99%;
+}
+#right-panel {
+  height: 100%;
+   width: 99%;
+  overflow: auto;
+}
+
+/*#floating-panel {
+  background: #fff;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+  display: none;
+}*/
+
+@media print {
+  #map {
+    height: 500px;
+    margin: 0;
+  }
+
+  #right-panel {
+    float: none;
+    width: auto;
+  }
+}
+
+#menu-switch {
+  position: absolute;
+  z-index: 15;
+  height: 50px;
+  font-size: 15px;
+  width: 50px;
+  color: #ffffff;
+  background-color: rgba(255, 88, 127, 0.9);
+  text-align: center;
+}
+
+#menu-switch p {
+  padding-top: 15px;
+}
+
+#menu {
+  position: absolute;
+  z-index: 10;
+  font-size: 15px;
+  width: 250px;
+  background-color: rgba(51, 146, 255, 0.9);
+  color: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+}
+
+#menu i {
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 8px;
+}
+
+#menu ul {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+#menu ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  list-style-type: none;
+  display: block;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px; 
+  border-bottom: #ffffff solid 0.05em;
+}
+
+#menu li:first-child {
+  border-top:  #ffffff solid 0.05em;
+}
+
+#menu li:hover {
+  background-color: #55b5ff;
+}
+
+#menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 25px;
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+#menu .fa-bars {
+  padding: 5px;
+  font-size: 30px;
+}
